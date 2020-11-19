@@ -1,0 +1,11 @@
+Thu Sep 17 14:46:46 BRT 2020 : Apache Derby Servidor de Rede - 10.8.1.2 - (1095077) iniciado e pronto para aceitar conexões na porta 1527 em {3}
+----------------------------------------------------------------
+Thu Sep 17 14:46:46 BRT 2020:
+ Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.8.1.2 - (1095077): instância a816c00e-0174-9d2c-ff47-000007255530
+no diretório de banco de dados /home/administrador/NetBeansProjects/ImportadorDePonto/dist/db  
+
+java.vendor=Oracle Corporation
+java.runtime.version=14.0.2+12-46
+user.dir=/home/administrador/NetBeansProjects/ImportadorDePonto/dist
+derby.system.home=null
+Carregador de classe do banco de dados iniciado - derby.database.classpath=''

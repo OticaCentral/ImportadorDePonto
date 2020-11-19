@@ -1,0 +1,42 @@
+Wed Nov 18 16:15:52 BRT 2020 : DRDA_ListenPort.S, <1527>, <0.0.0.0>, <java.net.BindException: Endereço já em uso>
+Foi lançada uma exceção durante a inicialização do servidor de rede. DRDA_ListenPort.S:DRDA_ListenPort.S, <1527>, <0.0.0.0>, <java.net.BindException: Endereço já em uso>
+java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.derby.iapi.jdbc.DRDAServerStarter.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.Exception: DRDA_ListenPort.S:DRDA_ListenPort.S, <1527>, <0.0.0.0>, <java.net.BindException: Endereço já em uso>
+	at org.apache.derby.impl.drda.NetworkServerControlImpl.consolePropertyMessageWork(Unknown Source)
+	at org.apache.derby.impl.drda.NetworkServerControlImpl.consolePropertyMessage(Unknown Source)
+	at org.apache.derby.impl.drda.NetworkServerControlImpl.blockingStart(Unknown Source)
+	... 6 more
+Wed Nov 18 16:15:52 BRT 2020 : DRDA_ListenPort.S, <1527>, <0.0.0.0>, <java.net.BindException: Endereço já em uso>
+Foi lançada uma exceção durante a inicialização do servidor de rede. DRDA_ListenPort.S:DRDA_ListenPort.S, <1527>, <0.0.0.0>, <java.net.BindException: Endereço já em uso>
+java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.derby.iapi.jdbc.DRDAServerStarter.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.Exception: DRDA_ListenPort.S:DRDA_ListenPort.S, <1527>, <0.0.0.0>, <java.net.BindException: Endereço já em uso>
+	at org.apache.derby.impl.drda.NetworkServerControlImpl.consolePropertyMessageWork(Unknown Source)
+	at org.apache.derby.impl.drda.NetworkServerControlImpl.consolePropertyMessage(Unknown Source)
+	at org.apache.derby.impl.drda.NetworkServerControlImpl.blockingStart(Unknown Source)
+	... 6 more
+Wed Nov 18 16:15:53 BRT 2020 : DRDA_ListenPort.S, <1527>, <0.0.0.0>, <java.net.BindException: Endereço já em uso>
+Foi lançada uma exceção durante a inicialização do servidor de rede. DRDA_ListenPort.S:DRDA_ListenPort.S, <1527>, <0.0.0.0>, <java.net.BindException: Endereço já em uso>
+java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.apache.derby.iapi.jdbc.DRDAServerStarter.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.Exception: DRDA_ListenPort.S:DRDA_ListenPort.S, <1527>, <0.0.0.0>, <java.net.BindException: Endereço já em uso>
+	at org.apache.derby.impl.drda.NetworkServerControlImpl.consolePropertyMessageWork(Unknown Source)
+	at org.apache.derby.impl.drda.NetworkServerControlImpl.consolePropertyMessage(Unknown Source)
+	at org.apache.derby.impl.drda.NetworkServerControlImpl.blockingStart(Unknown Source)
+	... 6 more
