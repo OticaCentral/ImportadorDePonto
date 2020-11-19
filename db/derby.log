@@ -1,0 +1,20 @@
+Wed Nov 18 14:30:52 BRT 2020 : Apache Derby Servidor de Rede - 10.8.3.2 - (1557835) iniciado e pronto para aceitar conexões na porta 1527 em {3}
+----------------------------------------------------------------
+Wed Nov 18 14:30:52 BRT 2020:
+ Inicializando o Derby versão The Apache Software Foundation - Apache Derby - 10.8.3.2 - (1557835): instância a816c00e-0175-dc68-b9d3-ffff8e30812b
+no diretório de banco de dados /home/administrador/NetBeansProjects/ImportadorDePonto/db/db  
+
+java.vendor=Oracle Corporation
+java.runtime.version=14.0.2+12-46
+user.dir=/home/administrador/jdk1.7.0_80/db
+os.name=Linux
+os.arch=amd64
+os.version=5.4.0-54-generic
+derby.system.home=/home/administrador/NetBeansProjects/ImportadorDePonto/db
+Carregador de classe do banco de dados iniciado - derby.database.classpath=''
+----------------------------------------------------------------
+Wed Nov 18 16:18:46 BRT 2020: Shutting down Derby engine
+----------------------------------------------------------------
+Wed Nov 18 16:18:46 BRT 2020:
+Encerrando a instância a816c00e-0175-dc68-b9d3-ffff8e30812b
+----------------------------------------------------------------
