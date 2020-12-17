@@ -53,6 +53,7 @@ public class ImportarPonto extends javax.swing.JFrame {
         jRadioButton1 = new javax.swing.JRadioButton();
         jScrollPane5 = new javax.swing.JScrollPane();
         jTable4 = new javax.swing.JTable();
+        jRadioButton3 = new javax.swing.JRadioButton();
         jPanel3 = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
@@ -145,6 +146,14 @@ public class ImportarPonto extends javax.swing.JFrame {
         });
         jScrollPane5.setViewportView(jTable4);
 
+        buttonGroup1.add(jRadioButton3);
+        jRadioButton3.setText("Modelo 3 (Ponto Antigo)");
+        jRadioButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jRadioButton3ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -155,11 +164,13 @@ public class ImportarPonto extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jRadioButton1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jRadioButton2))
+                        .addComponent(jRadioButton2)
+                        .addGap(19, 19, 19)
+                        .addComponent(jRadioButton3))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 587, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 362, Short.MAX_VALUE)
+                    .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 323, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 176, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -172,7 +183,8 @@ public class ImportarPonto extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jRadioButton1)
                     .addComponent(jRadioButton2)
-                    .addComponent(jButton2))
+                    .addComponent(jButton2)
+                    .addComponent(jRadioButton3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane5, javax.swing.GroupLayout.DEFAULT_SIZE, 455, Short.MAX_VALUE)
@@ -374,6 +386,10 @@ public class ImportarPonto extends javax.swing.JFrame {
         
     }//GEN-LAST:event_jButton4ActionPerformed
 
+    private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jRadioButton3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -424,6 +440,7 @@ public class ImportarPonto extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JRadioButton jRadioButton1;
     private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane5;
@@ -484,7 +501,15 @@ private void readFileMod(String end)
                           hora = "'" + datatxt.substring(37, 45)+ "'";
                         }
 
-                          
+                        if(jRadioButton3.isSelected())
+                        {
+                          codigoFuncionario = datatxt.substring(0, 2).trim().toString() ;
+                          nome = "'" +  datatxt.substring(2, 17) + "'";
+                          data = "'" + datatxt.substring(28, 38) + "'";
+                          dataString =  datatxt.substring(28, 38) ;
+                          hora = "'" + datatxt.substring(43, 48)+ "'";
+                        }
+                                                  
                          String salvaSql = "INSERT INTO APP.INFORMACOES ( CODFUNCIONARIO, NOME, DATA, HORA) VALUES ("
                                  + codigoFuncionario + " , "
                                  + nome + ", "

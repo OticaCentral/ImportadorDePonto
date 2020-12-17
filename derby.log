@@ -1,42 +1,106 @@
-Wed Nov 18 16:15:52 BRT 2020 : DRDA_ListenPort.S, <1527>, <0.0.0.0>, <java.net.BindException: Endereço já em uso>
-Foi lançada uma exceção durante a inicialização do servidor de rede. DRDA_ListenPort.S:DRDA_ListenPort.S, <1527>, <0.0.0.0>, <java.net.BindException: Endereço já em uso>
-java.lang.reflect.InvocationTargetException
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.apache.derby.iapi.jdbc.DRDAServerStarter.run(Unknown Source)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: java.lang.Exception: DRDA_ListenPort.S:DRDA_ListenPort.S, <1527>, <0.0.0.0>, <java.net.BindException: Endereço já em uso>
-	at org.apache.derby.impl.drda.NetworkServerControlImpl.consolePropertyMessageWork(Unknown Source)
-	at org.apache.derby.impl.drda.NetworkServerControlImpl.consolePropertyMessage(Unknown Source)
-	at org.apache.derby.impl.drda.NetworkServerControlImpl.blockingStart(Unknown Source)
-	... 6 more
-Wed Nov 18 16:15:52 BRT 2020 : DRDA_ListenPort.S, <1527>, <0.0.0.0>, <java.net.BindException: Endereço já em uso>
-Foi lançada uma exceção durante a inicialização do servidor de rede. DRDA_ListenPort.S:DRDA_ListenPort.S, <1527>, <0.0.0.0>, <java.net.BindException: Endereço já em uso>
-java.lang.reflect.InvocationTargetException
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.apache.derby.iapi.jdbc.DRDAServerStarter.run(Unknown Source)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: java.lang.Exception: DRDA_ListenPort.S:DRDA_ListenPort.S, <1527>, <0.0.0.0>, <java.net.BindException: Endereço já em uso>
-	at org.apache.derby.impl.drda.NetworkServerControlImpl.consolePropertyMessageWork(Unknown Source)
-	at org.apache.derby.impl.drda.NetworkServerControlImpl.consolePropertyMessage(Unknown Source)
-	at org.apache.derby.impl.drda.NetworkServerControlImpl.blockingStart(Unknown Source)
-	... 6 more
-Wed Nov 18 16:15:53 BRT 2020 : DRDA_ListenPort.S, <1527>, <0.0.0.0>, <java.net.BindException: Endereço já em uso>
-Foi lançada uma exceção durante a inicialização do servidor de rede. DRDA_ListenPort.S:DRDA_ListenPort.S, <1527>, <0.0.0.0>, <java.net.BindException: Endereço já em uso>
-java.lang.reflect.InvocationTargetException
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.apache.derby.iapi.jdbc.DRDAServerStarter.run(Unknown Source)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: java.lang.Exception: DRDA_ListenPort.S:DRDA_ListenPort.S, <1527>, <0.0.0.0>, <java.net.BindException: Endereço já em uso>
-	at org.apache.derby.impl.drda.NetworkServerControlImpl.consolePropertyMessageWork(Unknown Source)
-	at org.apache.derby.impl.drda.NetworkServerControlImpl.consolePropertyMessage(Unknown Source)
-	at org.apache.derby.impl.drda.NetworkServerControlImpl.blockingStart(Unknown Source)
-	... 6 more
+Mon Dec 14 09:55:02 BRT 2020 : Apache Derby Servidor de Rede - 10.8.3.2 - (1557835) iniciado e pronto para aceitar conexões na porta 1527 em {3}
+Mon Dec 14 09:55:02 BRT 2020 Thread[DRDAConnThread_2,5,main] Cleanup action starting
+java.sql.SQLException: Banco de dados 'db' não encontrado.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection30.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: java.sql.SQLException: Banco de dados 'db' não encontrado.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 19 more
+============= begin nested exception, level (1) ===========
+java.sql.SQLException: Banco de dados 'db' não encontrado.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection30.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (1) ===========
+Cleanup action completed
+Mon Dec 14 09:55:02 BRT 2020 Thread[DRDAConnThread_2,5,main] (DATABASE = db), (DRDAID = {1}), Banco de dados 'db' não encontrado.
+Mon Dec 14 09:55:06 BRT 2020 Thread[DRDAConnThread_2,5,main] Cleanup action starting
+java.sql.SQLException: Banco de dados 'db' não encontrado.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection30.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+Caused by: java.sql.SQLException: Banco de dados 'db' não encontrado.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	... 19 more
+============= begin nested exception, level (1) ===========
+java.sql.SQLException: Banco de dados 'db' não encontrado.
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.wrapArgsForTransportAcrossDRDA(Unknown Source)
+	at org.apache.derby.impl.jdbc.SQLExceptionFactory40.getSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.newEmbedSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.Util.generateCsSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.newSQLException(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.handleDBNotFound(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection30.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.getNewEmbedConnection(Unknown Source)
+	at org.apache.derby.jdbc.InternalDriver.connect(Unknown Source)
+	at org.apache.derby.jdbc.EmbeddedDriver.connect(Unknown Source)
+	at org.apache.derby.impl.drda.Database.makeConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.getConnFromDatabaseName(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.verifyUserIdPassword(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseSECCHK(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.parseDRDAConnection(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.processCommands(Unknown Source)
+	at org.apache.derby.impl.drda.DRDAConnThread.run(Unknown Source)
+============= end nested exception, level (1) ===========
+Cleanup action completed
+Mon Dec 14 09:55:06 BRT 2020 Thread[DRDAConnThread_2,5,main] (DATABASE = db), (DRDAID = {2}), Banco de dados 'db' não encontrado.
+----------------------------------------------------------------
+Mon Dec 14 09:55:33 BRT 2020: Shutting down Derby engine
+----------------------------------------------------------------
